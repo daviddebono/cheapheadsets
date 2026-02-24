@@ -22,6 +22,15 @@ Static marketing site for cheapheadsets.com.au. Lead funnel for budget headsets 
 
 ---
 
+## Homepage hero image
+
+The homepage banner uses `assets/homepage-image.jpg`. For fast loading, keep the file optimized:
+
+- **Recommended:** Max width 1600px, JPEG quality 80–85 (e.g. use [Squoosh](https://squoosh.app) or “Save for Web” in an editor).
+- **Optional script:** From the project root, run `node scripts/optimize-homepage-image.js` (requires Node and one-off `npm install sharp` in the project) to resize to 1600px wide and compress.
+
+---
+
 ## Product images
 
 Product category images are loaded from the `assets/` folder. Place these files in `assets/` (same folder as `logo.svg`) with these exact names so they match the product pages:
