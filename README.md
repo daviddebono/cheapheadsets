@@ -34,9 +34,11 @@ Product category images are loaded from the `assets/` folder. Place these files 
 The site expects **WebP** format. If you use JPG or PNG instead, change the `.webp` extension to `.jpg` or `.png` in `products.html` and in each of the four files in `products/`.
 
 **If images don’t show:**  
-1. Confirm these four files exist inside the `assets/` folder (same folder as `logo.svg`).  
-2. Add and commit them: `git add assets/*.webp` then `git commit -m "Add product images"` then `git push origin main`.  
-3. If the repo shows only `logo.svg` in `assets/`, the image files are missing from the project and need to be copied into `assets/` and committed.
+1. Confirm all four files exist in `assets/` with **exact** names: `bluetooth-headsets.webp`, `wireless-headphones.webp`, `usb-headsets.webp`, `telephone-headsets.webp` (all lowercase, hyphen).  
+2. Add each file explicitly and push: `git add assets/usb-headsets.webp` (and the others), then `git commit -m "Add product images"`, then `git push origin main`.  
+3. On GitHub, open the repo → `assets` folder and confirm **all four** .webp files appear (if one is missing, it wasn’t committed).  
+4. If one image still fails: re-save that file as a new WebP (in case it’s corrupted), ensure the filename has no extra spaces or different characters, then add and push again.  
+5. After pushing, clear Cloudflare cache (Cloudflare dashboard → Caching → Purge Everything) so the new file is served.
 
 ---
 
