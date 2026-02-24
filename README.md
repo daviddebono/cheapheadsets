@@ -22,6 +22,19 @@ Static marketing site for cheapheadsets.com.au. Lead funnel for budget headsets 
 
 ---
 
+## Product images
+
+Product category images are loaded from the `assets/` folder. Place these files in `assets/` (same folder as `logo.svg`) with these exact names so they match the product pages:
+
+- `bluetooth-headsets.jpg` — Bluetooth Headsets page + products overview card
+- `wireless-headphones.jpg` — Wireless Headphones page + products overview card
+- `usb-headsets.jpg` — USB Headsets page + products overview card
+- `telephone-headsets.jpg` — Telephone Headsets page + products overview card
+
+Supported formats: JPG, PNG, or WebP (if you use .png or .webp, update the file extension in `products.html` and in each of the four files in `products/`).
+
+---
+
 ## Deploying
 
 - **Cloudflare Pages:** Push to `main` on GitHub. Cloudflare builds and deploys automatically.

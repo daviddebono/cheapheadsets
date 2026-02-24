@@ -175,9 +175,12 @@ main { min-height: 60vh; }
 .section { padding: 3rem 0; }
 .section-alt { background: var(--bg-mid); }
 .section h2 { font-size: 1.75rem; margin: 0 0 1rem; }
-.section p { color: var(--text-muted); margin: 0 0 1rem; max-width: 72ch; }
+.section p { color: var(--text-muted); margin: 0 0 1rem; max-width: none; }
 .page-content-wide p { max-width: none; }
 .page-content-wide .faq-list { max-width: none; }
+
+/* Products page: View products button below thumbnails */
+.products-view-cta { margin-top: 2.5rem; margin-bottom: 0; }
 
 /* Cards */
 .card-grid {
@@ -191,11 +194,18 @@ main { min-height: 60vh; }
   border-radius: 6px;
   padding: 1.5rem;
 }
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
 .card h3 { margin: 0 0 0.5rem; font-size: 1.125rem; }
 .card p { margin: 0; font-size: 0.9375rem; }
 
 /* FAQ */
-.faq-list { max-width: 700px; }
+.faq-list { max-width: none; }
 .faq-item { border-bottom: 1px solid var(--border); padding: 1rem 0; }
 .faq-item h3 { font-size: 1rem; margin: 0 0 0.5rem; }
 .faq-item p { margin: 0; font-size: 0.9375rem; }
