@@ -33,6 +33,11 @@ Product category images are loaded from the `assets/` folder. Place these files 
 
 The site expects **WebP** format. If you use JPG or PNG instead, change the `.webp` extension to `.jpg` or `.png` in `products.html` and in each of the four files in `products/`.
 
+**If images don’t show:**  
+1. Confirm these four files exist inside the `assets/` folder (same folder as `logo.svg`).  
+2. Add and commit them: `git add assets/*.webp` then `git commit -m "Add product images"` then `git push origin main`.  
+3. If the repo shows only `logo.svg` in `assets/`, the image files are missing from the project and need to be copied into `assets/` and committed.
+
 ---
 
 ## Deploying
