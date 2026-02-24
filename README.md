@@ -26,12 +26,12 @@ Static marketing site for cheapheadsets.com.au. Lead funnel for budget headsets 
 
 Product category images are loaded from the `assets/` folder. Place these files in `assets/` (same folder as `logo.svg`) with these exact names so they match the product pages:
 
-- `bluetooth-headsets.jpg` — Bluetooth Headsets page + products overview card
-- `wireless-headphones.jpg` — Wireless Headphones page + products overview card
-- `usb-headsets.jpg` — USB Headsets page + products overview card
-- `telephone-headsets.jpg` — Telephone Headsets page + products overview card
+- `bluetooth-headsets.webp` — Bluetooth Headsets page + products overview card
+- `wireless-headphones.webp` — Wireless Headphones page + products overview card
+- `usb-headsets.webp` — USB Headsets page + products overview card
+- `telephone-headsets.webp` — Telephone Headsets page + products overview card
 
-Supported formats: JPG, PNG, or WebP (if you use .png or .webp, update the file extension in `products.html` and in each of the four files in `products/`).
+The site expects **WebP** format. If you use JPG or PNG instead, change the `.webp` extension to `.jpg` or `.png` in `products.html` and in each of the four files in `products/`.
 
 ---
 
