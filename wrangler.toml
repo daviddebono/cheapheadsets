@@ -1,0 +1,9 @@
+# Cloudflare Pages – cheapheadsets.com.au
+# Static site: no build step. Set in Dashboard:
+#   Build command: (empty)
+#   Build output directory: /
+name = "cheapheadsets"
+compatibility_date = "2024-01-01"
+
+# Pages (Git): build config is usually in the Cloudflare dashboard.
+# This file sets the project name; override in Dashboard if needed.
