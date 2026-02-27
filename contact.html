@@ -32,8 +32,8 @@
       <h1>Contact Us</h1>
       <p>Use the form below for bulk orders, product enquiries or quotes. We service Sydney, Melbourne, Brisbane, Adelaide, Canberra and Hobart and surrounding suburbs. For other hardware (switches, routers, phone systems, handsets), mention it in your message and our partner Telco Broker can assist.</p>
 
-      <!-- ENQUIRY FORM: Using Formspree endpoint https://formspree.io/f/meeldopz -->
-      <form id="form-enquiry" action="https://formspree.io/f/meeldopz" method="POST" style="max-width: 480px;">
+      <!-- ENQUIRY FORM: Handled by Cloudflare Pages Function posting to SMTP2GO -->
+      <form id="form-enquiry" action="/contact" method="POST" style="max-width: 480px;">
         <div class="form-group form-hp" aria-hidden="true">
           <label for="enquiry-website">Leave this blank</label>
           <input type="text" id="enquiry-website" name="website" tabindex="-1" autocomplete="off">
