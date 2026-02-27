@@ -32,8 +32,8 @@
       <h1>Contact Us</h1>
       <p>Use the form below for bulk orders, product enquiries or quotes. We service Sydney, Melbourne, Brisbane, Adelaide, Canberra and Hobart and surrounding suburbs. For other hardware (switches, routers, phone systems, handsets), mention it in your message and our partner Telco Broker can assist.</p>
 
-      <!-- ENQUIRY FORM: Replace action with your Formspree endpoint e.g. https://formspree.io/f/YOUR_FORMSPREE_ENQUIRY_ID -->
-      <form id="form-enquiry" action="https://formspree.io/f/YOUR_FORMSPREE_ENQUIRY_ID" method="POST" style="max-width: 480px;">
+      <!-- ENQUIRY FORM: Using Formspree endpoint https://formspree.io/f/meeldopz -->
+      <form id="form-enquiry" action="https://formspree.io/f/meeldopz" method="POST" style="max-width: 480px;">
         <div class="form-group form-hp" aria-hidden="true">
           <label for="enquiry-website">Leave this blank</label>
           <input type="text" id="enquiry-website" name="website" tabindex="-1" autocomplete="off">
@@ -51,8 +51,8 @@
           <input type="tel" id="enquiry-phone" name="phone" required autocomplete="tel">
         </div>
         <div class="form-group">
-          <label for="enquiry-message">Message <span style="color: var(--accent);">*</span></label>
-          <textarea id="enquiry-message" name="message" required></textarea>
+          <label for="enquiry-description">Description <span style="color: var(--accent);">*</span></label>
+          <textarea id="enquiry-description" name="description" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Send enquiry</button>
         <div id="form-enquiry-msg" class="form-msg" role="status"></div>
