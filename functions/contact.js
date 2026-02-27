@@ -50,27 +50,34 @@ export async function onRequestPost(context) {
     `;
 
     const payload = {
-      api_key: apiKey,
-      sender: 'contact@cheapheadsets.com.au',
+      sender: 'Cheap Headsets <cheapheadsets@circlebc.com.au>',
       to: ['telco@circlebc.com.au', 'david.debono@circlebc.com.au'],
-      reply_to: [email],
       subject,
       text_body: bodyText,
       html_body: bodyHtml,
+      custom_headers: [{ header: 'Reply-To', value: email }],
     };
 
     const smtp2goResponse = await fetch('https://api.smtp2go.com/v3/email/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
+        'X-Smtp2go-Api-Key': apiKey,
       },
       body: JSON.stringify(payload),
     });
 
     const data = await smtp2goResponse.json();
 
-    if (!smtp2goResponse.ok || (data.data && data.data.succeeded === 0)) {
-      return new Response(JSON.stringify({ error: 'Failed to send email' }), {
+    if (!smtp2goResponse.ok) {
+      const errMsg = (data.data && data.data.error) ? data.data.error : 'Failed to send email';
+      return new Response(JSON.stringify({ error: errMsg }), {
+        status: 502,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }
+    if (data.data && data.data.error) {
+      return new Response(JSON.stringify({ error: data.data.error }), {
         status: 502,
         headers: { 'Content-Type': 'application/json' },
       });
