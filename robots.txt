@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.cheapheadsets.com.au/sitemap.xml
+Sitemap: https://cheapheadsets.com.au/sitemap.xml
