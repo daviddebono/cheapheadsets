@@ -1,0 +1,12 @@
+/index.html /
+/about.html /about 301
+/products.html /products 301
+/benefits.html /benefits 301
+/case-studies.html /case-studies 301
+/contact.html /contact 301
+/privacy.html /privacy 301
+/terms.html /terms 301
+/blog/index.html /blog/ 301
+/blog/:slug.html /blog/:slug 301
+/products/:slug.html /products/:slug 301
+/locations/:slug.html /locations/:slug 301
